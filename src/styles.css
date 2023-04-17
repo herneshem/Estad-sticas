@@ -1,1 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*se crea un archivo compilador?
+ npx tailwindcss build ´ruta de style.css´ -o ruta de salida creada o l del compponent */
