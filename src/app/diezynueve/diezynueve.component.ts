@@ -1,5 +1,6 @@
-import { NgModule } from '@angular/core';
+import { Input, NgModule } from '@angular/core';
 import { Component } from '@angular/core';
+
 
 @Component({
     selector: 'app-diezynueve',
@@ -8,6 +9,12 @@ import { Component } from '@angular/core';
   })
 
   export class DiezynueveComponent{
+    @Input ()casapadre:any;
+    @Input ()cuartopadre:any
+    @Input ()banopadre:any
+    @Input ()terrazapadre:any
+    @Input ()cocinapadre:any
+
 
 
   }

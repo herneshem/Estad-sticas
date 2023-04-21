@@ -155,33 +155,52 @@ mostrando22(){
   homes?.classList.toggle('hidden')
   
  }
+casa=true
+cuarto=true
+bano=true
+terraza=true
+cocina=true
 
  jome(){
-  const jome = document.querySelector('.jome');
-  const veinte = document.querySelector('.veinte')
-  veinte?.classList.toggle('hidden');
-  
+  this.casa=true
+  this.cuarto=false
+  this.bano=false
+  this.terraza=false
+  this.cocina=false
 }
 
 room(){
-  const veinte = document.querySelector('.veinte');
-  const nueve =document.querySelector('.nueve')
-  nueve?.classList.toggle('hidden')
-  veinte?.classList.toggle('sobre');  
-  
+  this.cuarto=true
+  this.casa=false
+  this.bano=false
+  this.terraza=false
+  this.cocina=false
+
 }
 
 bath(){
-  const veinte = document.querySelector('.veinte');
-  const nueve =document.querySelector('.nueve');
-  const bath =document.querySelector('.bath');
+  this.bano=true
+  this.casa=false
+  this.cuarto=false
+  this.terraza=false
+  this.cocina=false
+}
+porshe(){
+  this.terraza=true
+  this.casa=false
+  this.cuarto=false
+  this.cocina=false
+  this.bano=false
 
-  nueve?.classList.toggle('hidden');
-  veinte?.classList.toggle('hidden'); 
-  bath?.classList.toggle('sobre');  
+}
+kitchen(){
+  this.cocina=true
+  this.casa=false
+  this.cuarto=false
+  this.terraza=false
+  this.bano=false
 
-  
-  console.log("viva");
+
 }
 
 //  seleccionar = true

@@ -1,14 +1,25 @@
 
-<div class="container-img">
+<div class="container-img" >
     <div class="slider-container ">
-        <ul>
-            <li><img src="../assets/img/casauno.jpg " alt=""></li>
-            <li><img src="../assets/img/casados.jpg " alt=""></li>
-            <li><img src="../assets/img/casauno.jpg " alt=""></li>
-            <li><img src="../assets/img/casados.jpg " alt=""></li>
+        <ul *ngIf="casapadre">
+            <li><img src="./assets/img/casauno.jpg " alt=""></li>
+            <li><img src="./assets/img/casados.jpg " alt=""></li>
+            <li><img src="./assets/img/casauno.jpg " alt=""></li>
+            <li><img src="./assets/img/casados.jpg " alt=""></li>
+        </ul>
+
+        <ul *ngIf="cuartopadre" >
+            <li><img src="../assets/img/roomuno.jpg " alt=""></li>
+            <li><img src="../assets/img/roomdos.jpg " alt=""></li>
+            <li><img src="../assets/img/roomtres.jpg " alt=""></li>
+            <li><img src="../assets/img/roomcuatro.jpg " alt=""></li>
         </ul>
     </div>
 </div>
+
+
+        
+
     
 
     

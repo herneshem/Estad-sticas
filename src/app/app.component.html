@@ -12,7 +12,7 @@
   <div class="container mx-auto h-screen  ">
     <div class="grid grid-cols-4 pt-5 pb-5 h-screen ">
       <div class="bg-slate-500 text-white col-span-1 text-center  ">
-        <img src="../assets/img/logo.png" alt="logo">
+        <img src="./assets/img/logo.png" alt="logo">
         <button (click)="mostrar()">Años de estudio <br>
           <h3 class="text-xs">(Elegir)</h3>
         </button>
@@ -26,16 +26,22 @@
           <button class="block pt-5 hover:text-red-700 hover:text-xl jome" (click)="jome()">Home</button>
           <button class="block pt-5 hover:text-red-700 hover:text-xl room" (click)="room()">Room</button>
           <button class="block pt-5 hover:text-red-700 hover:text-xl bath" (click)="bath()">Bathroom</button>
-          <button class="block pt-5 hover:text-red-700 hover:text-xl">porshe</button>
-          <button class="block pt-5 hover:text-red-700 hover:text-xl">Kitchen Room</button>
+          <button class="block pt-5 hover:text-red-700 hover:text-xl" (click)="porshe()">porshe</button>
+          <button class="block pt-5 hover:text-red-700 hover:text-xl" (click)="kitchen()">Kitchen Room</button>
         </div>
       </div>
       <div class="grid grid-rows-2 col-span-3 border-2 cuadros">
         <div class="imagen">
           <div class="nueve">
-            <app-diezynueve></app-diezynueve>
+            <app-diezynueve *ngIf="casa" [casapadre]="casa"></app-diezynueve>
+            <app-diezynueve *ngIf="cuarto" [cuartopadre]="cuarto"></app-diezynueve>
+            <app-diezynueve *ngIf="bano" [banopadre]="bano"></app-diezynueve>
+            <app-diezynueve *ngIf="terraza" [terrazapadre]="terraza"></app-diezynueve>
+            <app-diezynueve *ngIf="cocina" [cocinapadre]="cocina"></app-diezynueve>
 
           </div>
+          
+        
 
         </div>
 
