@@ -69,4 +69,6 @@
 	100% {margin-left: -300%;}
   }
   
-  
+  @media (max-width: 480px){
+    .homes{display: contents;}
+  }

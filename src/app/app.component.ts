@@ -203,32 +203,15 @@ kitchen(){
 
 }
 
-//  seleccionar = true
-//  seleccionardos= true
-//  aparicion(){
-//   const nueve = document.querySelector('.nueve');
-//   const veinte = document.querySelector('.veinte');
-//   nueve?.classList.toggle('sobre');
-//   veinte?.classList.toggle('homeshide')  
-//   this.seleccionar=!this.seleccionar
-//  }
-//  apariciondos(){
-//   const nueve = document.querySelector('.nueve');
-//   const veinte = document.querySelector('.veinte');
-//   nueve?.classList.toggle('homeshide');
-//   veinte?.classList.toggle('sobre');
-//   nueve?.classList.toggle('homeshide');
-  
-//   this.seleccionar=!this.seleccionar
-//  }
-//  seleccionar = true
-//  seleccionardos= true
-//  imagenesuno(){
-//   this.seleccionar=!this.seleccionar;
-//  }
-//  imagenesdos(){
-//   this.seleccionardos=!this.seleccionardos;
-//  }
+ mobileBreakpoint = 480; // definimos el breakpoint para dispositivos móviles
 
+ toggleMobileClass() {
+  const isMobile = window.innerWidth <= this.mobileBreakpoint;
+  const rem = document.querySelector('.homes');
+  
+  if (isMobile) {
+    console.log("removido") // agregamos la clase "mobile"
+  } 
+}
 
 }
