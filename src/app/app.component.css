@@ -71,4 +71,5 @@
   
   @media (max-width: 480px){
     .homes{display: contents;}
+    .slider-container{max-width: 275px;}
   }
